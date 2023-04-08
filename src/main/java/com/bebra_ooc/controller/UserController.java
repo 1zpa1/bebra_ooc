@@ -6,6 +6,7 @@ import com.bebra_ooc.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
+import javax.annotation.security.PermitAll;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -17,8 +18,10 @@ public class UserController {
     private UserService userService;
 
     @PostMapping("/add")
+    @PermitAll
     public UserDTO addUser(@RequestBody UserDTO userDTO) {
         User user = new User();
+//        user.setId(userDTO.getId());
         user.setUsername(userDTO.getUsername());
         user.setPassword(userDTO.getPassword());
         user.setRole(userDTO.getRole());
@@ -32,6 +35,7 @@ public class UserController {
         savedUserDTO.setRole(savedUser.getRole());
 
         return savedUserDTO;
+
     }
 
     @GetMapping("/all")
