@@ -1,0 +1,8 @@
+.UIBtn {
+    padding: 10px 25px;
+    color: teal;
+    font-size: 18px;
+    background: transparent;
+    border: 3px solid teal;
+    cursor: pointer;
+}
