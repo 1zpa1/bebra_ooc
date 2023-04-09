@@ -19,14 +19,12 @@ public class WorkingGroupController {
     private WorkingGroupService workingGroupService;
 
     @PostMapping
-    public WorkingGroupDTO addWorkingGroup(@RequestBody WorkingGroupDTO workingGroupDTO) {
-        WorkingGroup workingGroup = new WorkingGroup();
-        BeanUtils.copyProperties(workingGroupDTO, workingGroup);
-        WorkingGroup savedWorkingGroup = workingGroupService.addWorkingGroup(workingGroup);
-        WorkingGroupDTO savedWorkingGroupDTO = new WorkingGroupDTO();
-        BeanUtils.copyProperties(savedWorkingGroup, savedWorkingGroupDTO);
-        return savedWorkingGroupDTO;
+    public WorkingGroup addWorkingGroup(@RequestBody WorkingGroup workingGroup) {
+        WorkingGroup savedWorkingGroup = workingGroupService.addWorkingGroup(workingGroup); // сохраняем сущность в базу данных и получаем обновленную версию
+        return savedWorkingGroup;
     }
+
+
 
     @GetMapping
     public List<WorkingGroupDTO> getAllWorkingGroups(){

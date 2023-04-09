@@ -1,10 +1,18 @@
 package com.bebra_ooc.dto;
 
 import com.bebra_ooc.model.BuildingObject;
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
 
 import javax.persistence.Column;
 import javax.persistence.OneToMany;
 import java.util.List;
+@AllArgsConstructor
+@NoArgsConstructor
+@Getter
+@Setter
 
 public class WorkingGroupDTO {
 

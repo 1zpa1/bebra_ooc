@@ -56,6 +56,12 @@ public class BuildingObject {
 //    @XmlElement
     private String actualUser;
 
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "wg_id")
+    private WorkingGroup workingGroup;
+
+
+
     // ToDo добавить фото/видео
 
 }
