@@ -1,11 +1,11 @@
 package com.bebra_ooc.controller;
 
-import com.bebra_ooc.dto.WorkingGroupDTO;
+
 import com.bebra_ooc.dto.WorkingGroupResultDTO;
-import com.bebra_ooc.model.WorkingGroup;
+
 import com.bebra_ooc.model.WorkingGroupResult;
 import com.bebra_ooc.service.WorkingGroupResultService;
-import com.bebra_ooc.service.WorkingGroupService;
+
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
@@ -28,9 +28,8 @@ public class WorkingGroupResultController {
     }
 
 
-
     @GetMapping
-    public List<WorkingGroupResultDTO> getAllWorkingGroupsResult(){
+    public List<WorkingGroupResultDTO> getAllWorkingGroupsResult() {
         List<WorkingGroupResult> workingGroupsResult = workingGroupResultService.getAllWorkingGroupResult();
         return workingGroupsResult.stream()
                 .map(workingGroupResult -> {

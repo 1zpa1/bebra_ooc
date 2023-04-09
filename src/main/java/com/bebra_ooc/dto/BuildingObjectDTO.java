@@ -1,6 +1,6 @@
 package com.bebra_ooc.dto;
 
-import com.bebra_ooc.model.WorkingGroup;
+
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -22,6 +22,6 @@ public class BuildingObjectDTO {
     private String buildingObjectSquare;
     private String owner;
     private String actualUser;
-//    private WorkingGroup workingGroup;
+
 
 }
