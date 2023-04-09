@@ -7,54 +7,53 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 import javax.persistence.*;
-import javax.xml.bind.annotation.XmlElement;
-import javax.xml.bind.annotation.XmlRootElement;
 
+//@XmlAccessorType(XmlAccessType.FIELD)
+//@XmlRootElement(name = "buildingObject")
 @Entity
 @Table(name = "buildingObject")
 @AllArgsConstructor
 @NoArgsConstructor
 @Getter
 @Setter
-@XmlRootElement(name = "buildingObject")
 public class BuildingObject {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id")
-    @XmlElement
+    //@XmlElement
     private Long id;
 
     @Column(name = "county")
-    @XmlElement
+    //@XmlElement
     private String county;
 
     @Column(name = "area")
-    @XmlElement
+    //@XmlElement
     private String area;
 
     @Column(name = "address")
-    @XmlElement
+    //@XmlElement
     private String address;
 
     @Column(name = "buildingObjectType")
-    @XmlElement
+//    @XmlElement
     private String buildingObjectType;
 
     @Column(name = "buildingObjectState")
-    @XmlElement
+//    @XmlElement
     private String buildingObjectState;
 
     @Column(name = "buildingObjectSquare")
-    @XmlElement
+//    @XmlElement
     private String buildingObjectSquare;
 
     @Column(name = "owner")
-    @XmlElement
+    //@XmlElement
     private String owner;
 
     @Column(name = "actualUser")
-    @XmlElement
+//    @XmlElement
     private String actualUser;
 
     // ToDo добавить фото/видео
