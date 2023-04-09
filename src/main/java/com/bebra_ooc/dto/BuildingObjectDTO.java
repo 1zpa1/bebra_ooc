@@ -1,5 +1,6 @@
 package com.bebra_ooc.dto;
 
+
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -21,5 +22,6 @@ public class BuildingObjectDTO {
     private String buildingObjectSquare;
     private String owner;
     private String actualUser;
+
 
 }

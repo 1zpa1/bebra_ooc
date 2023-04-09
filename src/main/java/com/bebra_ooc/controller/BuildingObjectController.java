@@ -5,6 +5,7 @@ import com.bebra_ooc.model.BuildingObject;
 import com.bebra_ooc.service.BuildingObjectService;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
+
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -16,6 +17,7 @@ public class BuildingObjectController {
 
     @Autowired
     private BuildingObjectService buildingObjectService;
+
 
     @PostMapping
     public BuildingObjectDTO addBuildingObject(@RequestBody BuildingObjectDTO buildingObjectDTO) {
