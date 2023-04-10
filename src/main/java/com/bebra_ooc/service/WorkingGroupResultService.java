@@ -17,7 +17,6 @@ public class WorkingGroupResultService {
     private final WorkingGroupResultRepository workingGroupResultRepository;
 
 
-
     public WorkingGroupResult addWorkingGroupResult(WorkingGroupResult workingGroupResult) {
         return workingGroupResultRepository.save(workingGroupResult);
     }

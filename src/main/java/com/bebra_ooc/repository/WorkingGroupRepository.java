@@ -1,6 +1,5 @@
 package com.bebra_ooc.repository;
 
-import com.bebra_ooc.model.BuildingObject;
 import com.bebra_ooc.model.WorkingGroup;
 import org.springframework.data.jpa.repository.JpaRepository;
 

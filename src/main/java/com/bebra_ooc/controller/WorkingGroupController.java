@@ -25,9 +25,8 @@ public class WorkingGroupController {
     }
 
 
-
     @GetMapping
-    public List<WorkingGroupDTO> getAllWorkingGroups(){
+    public List<WorkingGroupDTO> getAllWorkingGroups() {
         List<WorkingGroup> workingGroups = workingGroupService.getAllWorkingGroup();
         return workingGroups.stream()
                 .map(workingGroup -> {
